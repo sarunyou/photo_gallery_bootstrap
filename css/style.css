@@ -1,0 +1,11 @@
+#navbar {
+    background-color:transparent;
+    border:none;
+}
+.navbar-nav li a:hover {
+    background: orange;
+}
+
+#gallery {
+    margin-bottom:50px;
+}

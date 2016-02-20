@@ -12,18 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <style media="screen">
@@ -34,7 +23,7 @@
 </style>
 
 <body>
-    <nav class="navbar navbar-default " role="navigation">
+    <nav class="navbar navbar-default " id="navbar" role="navigation">
         <div class="container">
 
             <div class="nav-header">
@@ -43,10 +32,10 @@
                 </div>
             </div>
 
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav ">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="nature.html">Nature Gallery</a></li>
-                <li><a href="">Science Gallery</a></li>
+                <li><a href="sci.html">Science Gallery</a></li>
             </ul>
 
         </div>
@@ -95,68 +84,131 @@
         <div class="page-header">
             <h1 class='text-center'>Photo Gallery <small></small></h1>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <a href="#m1" data-toggle="modal" class="thumbnail">
-                    <img src="images/slide1.jpg" alt="" />
-                </a>
-                <div class="modal fade" id="m1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                Image 1
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/slide1.jpg" class="img-thumbnail" alt="" />
-                            </div>
-                            <div class="modal-footer">
-                                This is the first image
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <a href="#m2" class="thumbnail" data-toggle="modal">
-                    <img src="images/slide2.jpg" alt="" />
-                </a>
-                <div class="modal fade" id="m2">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                Image 1
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/slide2.jpg" class="img-thumbnail" alt="" />
-                            </div>
-                            <div class="modal-footer">
-                                This is the second image
+        <div class="container" id="gallery" >
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#m1" data-toggle="modal" class="thumbnail">
+                        <img src="images/slide1.jpg" alt="" />
+                    </a>
+                    <div class="modal fade" id="m1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    Image 1
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/slide1.jpg" class="img-thumbnail" alt="" />
+                                </div>
+                                <div class="modal-footer">
+                                    This is the first image
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <a href="#m3" class="thumbnail" data-toggle="modal">
-                    <img src="images/slide3.jpg" alt="" />
-                </a>
-                <div class="modal fade" id="m3">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                Image 1
+                <div class="col-md-4">
+                    <a href="#m2" class="thumbnail" data-toggle="modal">
+                        <img src="images/slide2.jpg" alt="" />
+                    </a>
+                    <div class="modal fade" id="m2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    Image 2
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/slide2.jpg" class="img-thumbnail" alt="" />
+                                </div>
+                                <div class="modal-footer">
+                                    This is the second image
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <img src="images/slide3.jpg" class="img-thumbnail" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#m3" class="thumbnail" data-toggle="modal">
+                        <img src="images/slide3.jpg" alt="" />
+                    </a>
+                    <div class="modal fade" id="m3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    Image 3
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/slide3.jpg" class="img-thumbnail" alt="" />
+                                </div>
+                                <div class="modal-footer">
+                                    This is the third image
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                This is the third image
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#m4" class="thumbnail" data-toggle="modal">
+                        <img src="images/sci1.jpg" alt="" />
+                    </a>
+                    <div class="modal fade" id="m4">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    Image 4
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/sci1.jpg" class="img-thumbnail" alt="" />
+                                </div>
+                                <div class="modal-footer">
+                                    This is the forth image
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#m5" class="thumbnail" data-toggle="modal">
+                        <img src="images/sci2.jpg" alt="" />
+                    </a>
+                    <div class="modal fade" id="m5">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    Image 5
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/sci2.jpg" class="img-thumbnail" alt="" />
+                                </div>
+                                <div class="modal-footer">
+                                    This is the fifth image
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#m6" class="thumbnail" data-toggle="modal">
+                        <img src="images/sci3.png" alt="" />
+                    </a>
+                    <div class="modal fade" id="m6">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    Image 6
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/sci3.png" class="img-thumbnail" alt="" />
+                                </div>
+                                <div class="modal-footer">
+                                    This is the sixth image
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <footer class="navbar navbar-default navbar-fixed-bottom">
         <div class="container-fluid">
@@ -168,6 +220,19 @@
 
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
